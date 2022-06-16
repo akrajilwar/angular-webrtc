@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { RoomComponent } from './pages/room/room.component';
 import { ClientComponent } from './pages/client/client.component';
 import { HostComponent } from './pages/host/host.component';
+import { JanusComponent } from './pages/janus/janus.component';
 
 const config: SocketIoConfig = { url: 'wss://localhost:3000', options: {} };
 
@@ -17,7 +18,8 @@ const config: SocketIoConfig = { url: 'wss://localhost:3000', options: {} };
     HomeComponent,
     RoomComponent,
     ClientComponent,
-    HostComponent
+    HostComponent,
+    JanusComponent
   ],
   imports: [
     BrowserModule,
