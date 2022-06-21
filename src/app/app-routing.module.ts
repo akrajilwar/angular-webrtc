@@ -20,7 +20,7 @@ const routes: Routes = [
     component: JanusComponent,
   },
   {
-    path: 'client/:roomId',
+    path: 'client',
     component: ClientComponent,
   }
 ];

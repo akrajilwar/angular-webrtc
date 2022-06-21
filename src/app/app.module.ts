@@ -10,6 +10,12 @@ import { ClientComponent } from './pages/client/client.component';
 import { HostComponent } from './pages/host/host.component';
 import { JanusComponent } from './pages/janus/janus.component';
 
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgControlsModule } from '@videogular/ngx-videogular/controls';
+import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
+
+
 const config: SocketIoConfig = { url: 'wss://localhost:3000', options: {} };
 
 @NgModule({
@@ -24,6 +30,10 @@ const config: SocketIoConfig = { url: 'wss://localhost:3000', options: {} };
   imports: [
     BrowserModule,
     AppRoutingModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
     SocketIoModule.forRoot(config)
   ],
   providers: [],
